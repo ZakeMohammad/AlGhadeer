@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
   
-if (window.location.pathname !== '/AlGhadeer/RoomDetails.html') {
+if (window.location.pathname !== '/RoomDetails.html') {
   document.querySelector('.AddCommitForm').addEventListener('submit',function(e){
     e.preventDefault();
 
@@ -443,7 +443,7 @@ let FillSoicalMedia=()=>{
     document.getElementById('In').href=data.instegramURL;
     document.getElementById('Em').href=href=`mailto:${data.email}`;
   
-    if (window.location.pathname==='/AlGhadeer/contact.html') {
+    if (window.location.pathname==='/contact.html') {
       document.getElementById('email1').innerHTML = '<i class="fa fa-envelope-open text-primary me-2"></i>'+data.email;
       document.getElementById('email2').innerHTML='<i class="fa fa-envelope-open text-primary me-2"></i>'+data.email;
       document.getElementById('email1').href=`mailto:${data.email}`;
@@ -468,7 +468,7 @@ let FillSoicalMedia=()=>{
   FillSoicalMedia();
 
 
-if (window.location.pathname==='/AlGhadeer/index2.html') {
+if (window.location.pathname==='/index2.html') {
 
  let LandingData=document.getElementById('LandingContent');
 
@@ -739,7 +739,7 @@ function FillRandomCommit(Data) {
 
 
 
-if(window.location.pathname==='/AlGhadeer/room.html'){
+if(window.location.pathname==='/room.html'){
 
 
     let RoomsData=document.getElementById('RoomssContent');
@@ -813,7 +813,7 @@ if(window.location.pathname==='/AlGhadeer/room.html'){
 }
 
 
-if(window.location.pathname==='/AlGhadeer/RoomDetails.html'){
+if(window.location.pathname==='/RoomDetails.html'){
     let ID = new URLSearchParams(window.location.search).get('id');
 
     let GetDetails=()=>{
@@ -868,7 +868,7 @@ if(window.location.pathname==='/AlGhadeer/RoomDetails.html'){
 
 
 
-if(window.location.pathname==='/AlGhadeer/booking.html'){
+if(window.location.pathname==='/booking.html'){
     let ID = new URLSearchParams(window.location.search).get('id');
 
     let PriceForAppartment=0;
@@ -1035,7 +1035,7 @@ if(window.location.pathname==='/AlGhadeer/booking.html'){
 
 }
 
-if(window.location.pathname==='/AlGhadeer/about.html'){
+if(window.location.pathname==='/about.html'){
     let AboutusData=document.getElementById('AboutusContent');
     let StafsData=document.getElementById('StafsSection');
 
@@ -1155,7 +1155,7 @@ if(window.location.pathname==='/AlGhadeer/about.html'){
 }
 
 
-if(window.location.pathname==='/AlGhadeer/testimonial.html'){
+if(window.location.pathname==='/testimonial.html'){
 
     fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits`, {
         method: 'GET',

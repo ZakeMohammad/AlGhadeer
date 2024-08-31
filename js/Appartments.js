@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-if (window.location.pathname==='/AlGhadeer/AddAppartment.html') {
+if (window.location.pathname==='/AddAppartment.html') {
 
     document.querySelector('.AddAppartmentForm').addEventListener('submit', function(event) {
         event.preventDefault();
@@ -100,7 +100,7 @@ if (window.location.pathname==='/AlGhadeer/AddAppartment.html') {
 }
 
 
-if (window.location.pathname==='/AlGhadeer/Appartments.html') {
+if (window.location.pathname==='/Appartments.html') {
 
 let AppartmentsTabel=document.getElementById('TabelContent');
 var AppartmentChoosenID=0;

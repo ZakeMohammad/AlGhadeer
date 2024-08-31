@@ -77,7 +77,7 @@ function ShowID(id) {
    
 }
 
-if (window.location.pathname==='/AlGhadeer/index.html') {
+if (window.location.pathname==='/index.html') {
 
 const urlParams = new URLSearchParams(window.location.search);
 const IsDenide = urlParams.get('id');
@@ -276,7 +276,7 @@ $('#DeleteApp').click(function ()
 }
 
 
-        if (window.location.pathname==='/AlGhadeer/Bookings.html') {
+        if (window.location.pathname==='/Bookings.html') {
             let BookingTabel=document.getElementById('TabelContent');
             var BookingChoosenID=0;
 
@@ -515,7 +515,7 @@ $('#DeleteApp').click(function ()
 
 
 
-        if (window.location.pathname==='/AlGhadeer/Payments.html') {
+        if (window.location.pathname==='/Payments.html') {
 
 
             let PaymentTabel=document.getElementById('TabelContent');
@@ -616,7 +616,7 @@ $('#DeleteApp').click(function ()
 
         } ;
 
-        if (window.location.pathname==='/AlGhadeer/Transactions.html') {
+        if (window.location.pathname==='/Transactions.html') {
             let TrantTabel=document.getElementById('TabelContent');
             var TranChoosenID=0;
 
@@ -720,7 +720,7 @@ $('#DeleteApp').click(function ()
 
 
 
-        if (window.location.pathname==='/AlGhadeer/TimeLine.html') {
+        if (window.location.pathname==='/TimeLine.html') {
     
 
 
@@ -750,7 +750,7 @@ $('#DeleteApp').click(function ()
 
 
 
-        if (window.location.pathname==='/AlGhadeer/Admins.html') {
+        if (window.location.pathname==='/Admins.html') {
            
             if (( CurrentAdminPermission & 1) !== 1){
                 window.location.href='index.html?id=1';
@@ -1066,7 +1066,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
 
-        if (window.location.pathname==='/AlGhadeer/AddAdmin.html') {
+        if (window.location.pathname==='/AddAdmin.html') {
     
 
             document.querySelector('.AddAdminForm').addEventListener('submit', function(event) {
@@ -1147,7 +1147,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
 
-        if (window.location.pathname==='/AlGhadeer/UpdateAdmin.html') {
+        if (window.location.pathname==='/UpdateAdmin.html') {
 
             let ID = new URLSearchParams(window.location.search).get('id');
         
@@ -1285,55 +1285,55 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
     
 
 
-        if (window.location.pathname==='/AlGhadeer/Appartments.html') {
+        if (window.location.pathname==='/Appartments.html') {
             if (( CurrentAdminPermission & 2) !== 2){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/AddAppartment.html') {
+        if (window.location.pathname==='/AddAppartment.html') {
             if (( CurrentAdminPermission & 2) !== 2){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/Bookings.html') {
+        if (window.location.pathname==='/Bookings.html') {
             if (( CurrentAdminPermission & 4) !== 4){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/Payments.html') {
+        if (window.location.pathname==='/Payments.html') {
             if (( CurrentAdminPermission & 8) !== 8){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/Transactions.html') {
+        if (window.location.pathname==='/Transactions.html') {
             if (( CurrentAdminPermission & 32) !== 32){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/HomeContent.html') {
+        if (window.location.pathname==='/HomeContent.html') {
             if (( CurrentAdminPermission & 128) !== 128){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/aboutus.html') {
+        if (window.location.pathname==='/aboutus.html') {
             if (( CurrentAdminPermission & 256) !== 256){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/SocilaMedia.html') {
+        if (window.location.pathname==='/SocilaMedia.html') {
             if (( CurrentAdminPermission & 512) !== 512){
                 window.location.href='index.html?id=1';
                 return;
             }
         }
-        if (window.location.pathname==='/AlGhadeer/Stafs.html') {
+        if (window.location.pathname==='/Stafs.html') {
             if (( CurrentAdminPermission & 1024) !== 1024){
                 window.location.href='index.html?id=1';
                 return;

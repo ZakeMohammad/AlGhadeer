@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     
-if (window.location.pathname==='/AlGhadeer/HomeContent.html') {
+if (window.location.pathname==='/HomeContent.html') {
 
     let LandingData=document.getElementById('HomeContentData');
 
@@ -190,7 +190,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
 };
 
 
-        if (window.location.pathname==='/AlGhadeer/aboutus.html') {
+        if (window.location.pathname==='/aboutus.html') {
         
             fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
               method:'GET',
@@ -471,7 +471,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
  };
 
 
- if (window.location.pathname==='/AlGhadeer/SocilaMedia.html') {
+ if (window.location.pathname==='/SocilaMedia.html') {
 
  fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/SocialMedia`,{
  method:'GET',
@@ -587,7 +587,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
   };
 
 
-        if (window.location.pathname==='/AlGhadeer/Stafs.html') {
+        if (window.location.pathname==='/Stafs.html') {
 
 
 
