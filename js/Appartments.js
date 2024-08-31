@@ -29,7 +29,7 @@ if (window.location.pathname === '/AddAppartment.html') {
         formData.append('ImageFile4', imageFile4);
     
         console.log(formData);
-        fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/AddNew', {
+        fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/AddNew', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -105,7 +105,7 @@ if (window.location.pathname === '/Appartments.html') {
 let AppartmentsTabel=document.getElementById('TabelContent');
 var AppartmentChoosenID=0;
 
-fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllRooms`,{
+fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllRooms`,{
     method:'GET',
     headers:{
        'Content-Type': 'application/json'
@@ -198,7 +198,7 @@ document.querySelectorAll('.updateTextbutton').forEach(button => {
     button.addEventListener('click', function() {
         AppartmentChoosenID = this.getAttribute('data-id');
         let GetAppartment=()=>{
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/GetByIDAp?id=${AppartmentChoosenID}`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/GetByIDAp?id=${AppartmentChoosenID}`,{
              method:'GET',
              headers:{
          'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -241,7 +241,7 @@ document.querySelectorAll('.updateImagesbutton').forEach(button => {
 document.getElementById('DeleteApp').addEventListener('click',function(event){
 
     event.preventDefault();
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/${AppartmentChoosenID}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/${AppartmentChoosenID}`, {
         method: 'DELETE', 
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -295,7 +295,7 @@ document.getElementById('UpdateImage1').addEventListener('submit',function(event
     formData.append('id', AppartmentChoosenID); 
     formData.append('AnyImage', 1); 
     formData.append('ImageFile', imageFile); 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -344,7 +344,7 @@ document.getElementById('UpdateImage2').addEventListener('submit',function(event
     formData.append('id', AppartmentChoosenID); 
     formData.append('AnyImage', 2); 
     
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -394,7 +394,7 @@ document.getElementById('UpdateImage3').addEventListener('submit',function(event
     formData.append('id', AppartmentChoosenID); 
     formData.append('AnyImage', 3); 
     formData.append('ImageFile', imageFile); 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -444,7 +444,7 @@ document.getElementById('UpdateImage4').addEventListener('submit',function(event
     formData.append('id',AppartmentChoosenID);
     formData.append('AnyImage',4);  
     formData.append('ImageFile',imageFile);
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/UpdateImages`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}` 
@@ -503,7 +503,7 @@ document.querySelector('.UpdateForm').addEventListener('submit', function(event)
         Image4: "7"
     };
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/${AppartmentChoosenID}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Appartment/${AppartmentChoosenID}`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`,

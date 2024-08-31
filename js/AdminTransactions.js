@@ -40,7 +40,7 @@ let decodedToken = parseJwt(token);
     {  window.location.href = 'login.html';
     }
     let GetAdmin=()=>{
-        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminIDtoken}`,{
+        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminIDtoken}`,{
          method:'GET',
          headers:{
               'Authorization': `Bearer ${token}`,
@@ -69,7 +69,7 @@ let decodedToken = parseJwt(token);
     }
 
 
-document.getElementById('AdminImage').src =`http://rashadalabbasy-001-site1.ctempurl.com/Images/AdminImages/${AdminImage}`;
+document.getElementById('AdminImage').src =`https://rashadalabbasy-001-site1.ctempurl.com/Images/AdminImages/${AdminImage}`;
 document.getElementById('AdminName').innerText =`${AdminName}`;
 document.getElementById('UpdateMyPage').href=`UpdateAdmin.html?id=${AdminIDtoken}`;
 
@@ -97,7 +97,7 @@ $('.gritter-item').addClass('RedNot');
 
     let DeleteThisCommit=0;
 
-fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DashpoordData', {
+fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DashpoordData', {
     method: 'GET', 
     headers: {
         'Authorization': `Bearer ${token}`,
@@ -120,7 +120,7 @@ fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/Dashpo
 });
 
 
-fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits', {
+fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits', {
     method: 'GET', 
     headers: {
         'Content-Type': 'application/json'
@@ -185,7 +185,7 @@ Data.forEach((onecommit)=>{
 if(detectLanguage(onecommit.description)==='Arabic'){
     commitcountent+=` <li class="right clearfix">
                                         <span class="chat-img pull-right">
-                                           <img loading="lazy"  src="http://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${onecommit.image}"  style="height: 50px; width: 50px;" alt="User Avatar" class="img-circle" />
+                                           <img loading="lazy"  src="https://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${onecommit.image}"  style="height: 50px; width: 50px;" alt="User Avatar" class="img-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header"  style="display: flex; justify-content: space-between; align-items: center;">
@@ -204,7 +204,7 @@ if(detectLanguage(onecommit.description)==='Arabic'){
 else{
     commitcountent+=`<li class="left clearfix">
                                         <span class="chat-img pull-left" >
-                                           <img loading="lazy"  src="http://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${onecommit.image}" style="height: 50px; width: 50px;" alt="User Avatar" class="img-circle" />
+                                           <img loading="lazy"  src="https://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${onecommit.image}" style="height: 50px; width: 50px;" alt="User Avatar" class="img-circle" />
                                         </span>
                                         <div class="chat-body clearfix">
                                             <div class="header" style="display: flex; justify-content: space-between; align-items: center;">
@@ -233,7 +233,7 @@ document.querySelectorAll('.deletebutton').forEach(button => {
 $('#DeleteApp').click(function ()
 { 
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteCommit?ID=${DeleteThisCommit}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteCommit?ID=${DeleteThisCommit}`, {
         method: 'DELETE', 
         headers: {
             'Authorization': `Bearer ${token}`,
@@ -280,7 +280,7 @@ $('#DeleteApp').click(function ()
             let BookingTabel=document.getElementById('TabelContent');
             var BookingChoosenID=0;
 
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetBookings`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetBookings`,{
                 method:'GET',
                 headers:{
                     'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -360,7 +360,7 @@ $('#DeleteApp').click(function ()
                     document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteBooking?BookingID=${BookingChoosenID}`, {
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteBooking?BookingID=${BookingChoosenID}`, {
                             method: 'DELETE', 
                             headers: {
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -409,7 +409,7 @@ $('#DeleteApp').click(function ()
 
                     document.querySelector('.ConfimB').addEventListener('click',function(){
 
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=1&AdminID=${AdminIDtoken}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=1&AdminID=${AdminIDtoken}`,{
                             method:'PUT',
                             headers:{
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -435,7 +435,7 @@ $('#DeleteApp').click(function ()
                     document.querySelector('.StartB').addEventListener('click',function(){
 
                         document.getElementById('CloseChanges').click();
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=2&AdminID=${AdminIDtoken}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=2&AdminID=${AdminIDtoken}`,{
                             method:'PUT',
                             headers:{
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -460,7 +460,7 @@ $('#DeleteApp').click(function ()
                     document.querySelector('.CancelB').addEventListener('click',function(){
                         document.getElementById('CloseChanges').click();
 
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=4&AdminID=${AdminIDtoken}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=4&AdminID=${AdminIDtoken}`,{
                             method:'PUT',
                             headers:{
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -485,7 +485,7 @@ $('#DeleteApp').click(function ()
                     });
                     document.querySelector('.ComplaidB').addEventListener('click',function(){
                         document.getElementById('CloseChanges').click();
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=3&AdminID=${AdminIDtoken}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/ChangeBookingStatus?BookingID=${BookingChoosenID}&StatusID=3&AdminID=${AdminIDtoken}`,{
                             method:'PUT',
                             headers:{
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -522,7 +522,7 @@ $('#DeleteApp').click(function ()
             var PaymentChoosenID=0;
 
 
-            fetch(`  http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetPayments`,{
+            fetch(`  https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetPayments`,{
                 method:'GET',
                 headers:{
                     'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -569,7 +569,7 @@ $('#DeleteApp').click(function ()
                 document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
-                    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeletePayments?ID=${PaymentChoosenID}`, {
+                    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeletePayments?ID=${PaymentChoosenID}`, {
                         method: 'DELETE', 
                         headers: {
                             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -621,7 +621,7 @@ $('#DeleteApp').click(function ()
             var TranChoosenID=0;
 
 
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetTransaction`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetTransaction`,{
                 method:'GET',
                 headers:{
                     'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -672,7 +672,7 @@ $('#DeleteApp').click(function ()
                 document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
-                    fetch(` http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteTransaction?ID=${TranChoosenID}`, {
+                    fetch(` https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/DeleteTransaction?ID=${TranChoosenID}`, {
                         method: 'DELETE', 
                         headers: {
                             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -724,7 +724,7 @@ $('#DeleteApp').click(function ()
     
 
 
-          fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetTimeLine', {
+          fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetTimeLine', {
             method: 'GET', 
             headers: {
                 'Authorization': `Bearer ${token}`,
@@ -760,7 +760,7 @@ $('#DeleteApp').click(function ()
             let AdminsTabel=document.getElementById('TabelContent');
             var AdminChoosenID=0;
             let AdminChoosenPermissions=1;
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin`,{
                 method:'GET',
                 headers:{
                     'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -811,7 +811,7 @@ function FillAllAdmins(Data){
 
             AdminChoosenID = this.getAttribute('data-id');
             let GetAdminDetilsForPermissions=()=>{
-                fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminChoosenID}`,{
+                fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminChoosenID}`,{
                  method:'GET',
                  headers:{
              'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -956,7 +956,7 @@ document.querySelector('.UpdateForm').addEventListener('submit', function(event)
     event.preventDefault();
 
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/ChangePermission${AdminChoosenID}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/ChangePermission${AdminChoosenID}`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -1014,7 +1014,7 @@ document.querySelector('.UpdateForm').addEventListener('submit', function(event)
 document.getElementById('DeleteApp').addEventListener('click',function(){
 
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminChoosenID}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${AdminChoosenID}`, {
         method: 'DELETE', 
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -1083,7 +1083,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
                 formData.append('Entity.Image', '1');              
                 formData.append('ImageFile1', imageFile1);
                 formData.append('AddByAdminID', 1);
-                fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/AddNewAdmin', {
+                fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/AddNewAdmin', {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -1153,7 +1153,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
         
                   
                     let GetAdmin=()=>{
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${ID}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${ID}`,{
                          method:'GET',
                          headers:{
                      'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -1189,7 +1189,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
                             
                         };
                     
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${ID}`, {
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Admin/${ID}`, {
                             method: 'PUT',
                             headers: {
                                 'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -1240,7 +1240,7 @@ document.getElementById('DeleteApp').addEventListener('click',function(){
                          formData.append('id', ID); 
                          formData.append('AnyImage', 5); 
                          formData.append('ImageFile1', imageFile1); 
-                         fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAdmin`, {
+                         fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAdmin`, {
                              method: 'PUT',
                              headers: {
                                  'Authorization': `Bearer ${localStorage.getItem('Token')}`

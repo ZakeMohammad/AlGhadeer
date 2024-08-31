@@ -3,7 +3,7 @@
     var data = [],
         series = MyDataFromAPi[0];
 
-        fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetRatios', {
+        fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetRatios', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json'

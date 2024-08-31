@@ -371,7 +371,7 @@ if (window.location.pathname !== '/RoomDetails.html') {
 
    console.log(formData);
 
-   fetch('http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AddCommit', {
+   fetch('https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AddCommit', {
        method: 'POST', 
    
        body: formData
@@ -426,7 +426,7 @@ if (window.location.pathname !== '/RoomDetails.html') {
 
 
 let FillSoicalMedia=()=>{
-  fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/SocialMedia`,{
+  fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/SocialMedia`,{
    method:'GET',
    headers:{
       'Content-Type': 'application/json'
@@ -478,7 +478,7 @@ if (window.location.pathname === '/index2.html') {
 
 
  
-  fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/LandingContant`,{
+  fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/LandingContant`,{
     method:'GET',
     headers:{
        'Content-Type': 'application/json'
@@ -493,7 +493,7 @@ if (window.location.pathname === '/index2.html') {
     FillLandingData(data);
    });
 
-   fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
+   fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
     method:'GET',
     headers:{
        'Content-Type': 'application/json'
@@ -517,7 +517,7 @@ if (window.location.pathname === '/index2.html') {
         counter++;
         if (counter === 1) { 
             LandingCountent += `<div class="carousel-item active">
-                       <img loading="lazy"  class="w-100" style="height: 600px;" id="Image1" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="Image">
+                       <img loading="lazy"  class="w-100" style="height: 600px;" id="Image1" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Al-Ghadder</h6>
@@ -529,7 +529,7 @@ if (window.location.pathname === '/index2.html') {
                     </div>`;
         } else {
             LandingCountent += `<div class="carousel-item">
-                       <img loading="lazy"  class="w-100" style="height: 600px;" id="Image1" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="Image">
+                       <img loading="lazy"  class="w-100" style="height: 600px;" id="Image1" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="Image">
                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                             <div class="p-3" style="max-width: 700px;">
                                 <h6 class="section-title text-white text-uppercase mb-3 animated slideInDown">Al-Ghadder</h6>
@@ -587,16 +587,16 @@ if (window.location.pathname === '/index2.html') {
                     <div class="col-lg-6">
                         <div class="row g-3">
                             <div class="col-6 text-end">
-                               <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}" style="margin-top: 25%;">
+                               <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}" style="margin-top: 25%;">
                             </div>
                             <div class="col-6 text-start">
-                               <img loading="lazy"  class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}">
+                               <img loading="lazy"  class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}">
                             </div>
                             <div class="col-6 text-end">
-                               <img loading="lazy"  class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}">
+                               <img loading="lazy"  class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}">
                             </div>
                             <div class="col-6 text-start">
-                               <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}">
+                               <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}">
                             </div>
                         </div>
                     </div>`;
@@ -607,7 +607,7 @@ if (window.location.pathname === '/index2.html') {
 
 
 
-fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomRoom`,{
+fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomRoom`,{
     method:'GET',
     headers:{
        'Content-Type': 'application/json'
@@ -647,7 +647,7 @@ fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomRoom`,
         RandomRoomCountent += ` <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="room-item shadow rounded overflow-hidden">
                             <div class="position-relative">
-                               <img loading="lazy"  class="img-fluid" style="height: 250px; width:100%"  src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${element.image1}" alt="">
+                               <img loading="lazy"  class="img-fluid" style="height: 250px; width:100%"  src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${element.image1}" alt="">
                                 <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${element.costPerNight} JD/Night</small>
                             </div>
                             <div class="p-4 mt-2">
@@ -679,7 +679,7 @@ fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomRoom`,
 
 
 
-fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomCommit`, {
+fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RandomCommit`, {
     method: 'GET',
     headers: {
         'Content-Type': 'application/json'
@@ -701,7 +701,7 @@ function FillRandomCommit(Data) {
         CommitContent += `
            <div class="item">
                <div class="shadow-effect">
-                  <img loading="lazy"  class="img-circle" style="width: 80px; height: 80px; border-radius: 50%;" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${element.image}" alt="">
+                  <img loading="lazy"  class="img-circle" style="width: 80px; height: 80px; border-radius: 50%;" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${element.image}" alt="">
                    <p>${element.description}</p>
                </div>
                <div class="testimonial-name">${element.name}</div>
@@ -744,7 +744,7 @@ if(window.location.pathname==='/room.html'){
 
     let RoomsData=document.getElementById('RoomssContent');
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllRooms`,{
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllRooms`,{
         method:'GET',
         headers:{
            'Content-Type': 'application/json'
@@ -781,7 +781,7 @@ if(window.location.pathname==='/room.html'){
         RoomsContent += ` <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="room-item shadow rounded overflow-hidden">
                                 <div class="position-relative">
-                                   <img loading="lazy"  class="img-fluid" style="height: 250px; width:100%"  src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${element.image1}" alt="">
+                                   <img loading="lazy"  class="img-fluid" style="height: 250px; width:100%"  src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${element.image1}" alt="">
                                     <small class="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">${element.costPerNight} JD/Night</small>
                                 </div>
                                 <div class="p-4 mt-2">
@@ -817,7 +817,7 @@ if(window.location.pathname==='/RoomDetails.html'){
     let ID = new URLSearchParams(window.location.search).get('id');
 
     let GetDetails=()=>{
-        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RoomDeltails?id=${ID}`,{
+        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RoomDeltails?id=${ID}`,{
          method:'GET',
          headers:{
             'Content-Type': 'application/json'
@@ -854,10 +854,10 @@ if(window.location.pathname==='/RoomDetails.html'){
         
          document.getElementById('Description').innerText=data.description;
 
-          document.getElementById('image1').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image1}`;
-          document.getElementById('image2').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image2}`;
-          document.getElementById('image3').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image3}`;
-          document.getElementById('image4').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image4}`;
+          document.getElementById('image1').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image1}`;
+          document.getElementById('image2').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image2}`;
+          document.getElementById('image3').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image3}`;
+          document.getElementById('image4').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image4}`;
         })
         };
         
@@ -875,7 +875,7 @@ if(window.location.pathname==='/booking.html'){
     let FinalPrice=0;
 
     let GetDetails=()=>{
-        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RoomDeltails?id=${ID}`,{
+        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/RoomDeltails?id=${ID}`,{
          method:'GET',
          headers:{
             'Content-Type': 'application/json'
@@ -890,10 +890,10 @@ if(window.location.pathname==='/booking.html'){
             return response.json();
         }).then(data=>{
             PriceForAppartment=data.costPerNight
-          document.getElementById('image1').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image1}`;
-          document.getElementById('image2').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image2}`;
-          document.getElementById('image3').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image3}`;
-          document.getElementById('image4').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image4}`;
+          document.getElementById('image1').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image1}`;
+          document.getElementById('image2').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image2}`;
+          document.getElementById('image3').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image3}`;
+          document.getElementById('image4').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AppartmentImages/${data.image4}`;
         })
         };
 
@@ -992,7 +992,7 @@ if(window.location.pathname==='/booking.html'){
     };
     
 
-  fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/BookAAppartment`, {
+  fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/BookAAppartment`, {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
@@ -1039,7 +1039,7 @@ if(window.location.pathname==='/about.html'){
     let StafsData=document.getElementById('StafsSection');
 
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
         method:'GET',
         headers:{
            'Content-Type': 'application/json'
@@ -1095,23 +1095,23 @@ if(window.location.pathname==='/about.html'){
                         <div class="col-lg-6">
                             <div class="row g-3">
                                 <div class="col-6 text-end">
-                                   <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}" style="margin-top: 25%;">
+                                   <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.1s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}" style="margin-top: 25%;">
                                 </div>
                                 <div class="col-6 text-start">
-                                   <img loading="lazy"  class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}">
+                                   <img loading="lazy"  class="img-fluid rounded w-100 wow zoomIn" data-wow-delay="0.3s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}">
                                 </div>
                                 <div class="col-6 text-end">
-                                   <img loading="lazy"  class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}">
+                                   <img loading="lazy"  class="img-fluid rounded w-50 wow zoomIn" data-wow-delay="0.5s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}">
                                 </div>
                                 <div class="col-6 text-start">
-                                   <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}">
+                                   <img loading="lazy"  class="img-fluid rounded w-75 wow zoomIn" data-wow-delay="0.7s" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}">
                                 </div>
                             </div>
                         </div>`;
         AboutusData.innerHTML = AboutUsContent; 
     }
     
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/Stafs`,{
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/Stafs`,{
         method:'GET',
         headers:{
            'Content-Type': 'application/json'
@@ -1133,7 +1133,7 @@ if(window.location.pathname==='/about.html'){
                             Stafscontent+= `<div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                             <div class="rounded shadow overflow-hidden">
                                 <div class="position-relative">
-                                   <img loading="lazy"  class="img-fluid" style="width: 100%; height: 250px;" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${data.image}" alt="">
+                                   <img loading="lazy"  class="img-fluid" style="width: 100%; height: 250px;" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${data.image}" alt="">
                                     <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
                                         <a class="btn btn-square btn-primary mx-1" href="https://wa.me/${data.phone}?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
 
@@ -1156,7 +1156,7 @@ if(window.location.pathname==='/about.html'){
 
 if(window.location.pathname==='/testimonial.html'){
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits`, {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
@@ -1178,7 +1178,7 @@ if(window.location.pathname==='/testimonial.html'){
             CommitContent += `
                <div class="item">
                    <div class="shadow-effect">
-                      <img loading="lazy"  class="img-circle" style="width: 80px; height: 80px; border-radius: 50%;" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${element.image}" alt="">
+                      <img loading="lazy"  class="img-circle" style="width: 80px; height: 80px; border-radius: 50%;" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/CommitImages/${element.image}" alt="">
                        <p>${element.description}</p>
                    </div>
                    <div class="testimonial-name">${element.name}</div>

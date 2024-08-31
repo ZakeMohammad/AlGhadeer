@@ -6,7 +6,7 @@ if (window.location.pathname === '/HomeContent.html') {
 
     let LandingData=document.getElementById('HomeContentData');
 
-  fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/LandingContant`,{
+  fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/LandingContant`,{
     method:'GET',
     headers:{
        'Content-Type': 'application/json'
@@ -39,7 +39,7 @@ let IDForUpdatTextOrImage=0;
 			<p style="text-align:center;    display: grid;
     grid-gap: 10px;">
 
-		<a  id="example2" href="http://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}"   title="${element.text}"><img  style="width: 100%; height: 250px;" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="" /></a>
+		<a  id="example2" href="https://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}"   title="${element.text}"><img  style="width: 100%; height: 250px;" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/LandingImages/${element.image}" alt="" /></a>
         <button class="btn btn-grad btn-default UpdateImge" data-id="${element.id}" data-toggle="modal" data-target="#formModal2">تحديث الصورة</button>
        <button class="btn btn-grad btn-default UpdateText" data-id="${element.id}" data-toggle="modal" data-target="#formModal">تحديث النص</button>
 	        </p>
@@ -55,7 +55,7 @@ let IDForUpdatTextOrImage=0;
             IDForUpdatTextOrImage = this.getAttribute('data-id');
 
             let GetLandingContent=()=>{
-                fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetLandingContentByID?id=${IDForUpdatTextOrImage}`,{
+                fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetLandingContentByID?id=${IDForUpdatTextOrImage}`,{
                  method:'GET',
                  headers:{
              'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -97,7 +97,7 @@ let IDForUpdatTextOrImage=0;
     formData.append('id', IDForUpdatTextOrImage); 
     formData.append('AnyImage', 5); 
     formData.append('ImageFile1', imageFile1); 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagLandingContent`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagLandingContent`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -141,7 +141,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
     event.preventDefault();
 
   
-    fetch(` http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateLanding${IDForUpdatTextOrImage}`, {
+    fetch(` https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateLanding${IDForUpdatTextOrImage}`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -192,7 +192,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
 
         if (window.location.pathname === '/aboutus.html') {
         
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AboutUs`,{
               method:'GET',
               headers:{
                  'Content-Type': 'application/json'
@@ -209,10 +209,10 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
           
              function FillAboutUs(Data){
                 document.querySelector('.TextAboutus').value=Data.description;
-                document.getElementById('currentImage1').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}`;
-                document.getElementById('currentImage2').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}`;
-                document.getElementById('currentImage3').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}`;
-                document.getElementById('currentImage4').src=`http://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}`;
+                document.getElementById('currentImage1').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image1}`;
+                document.getElementById('currentImage2').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image2}`;
+                document.getElementById('currentImage3').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image3}`;
+                document.getElementById('currentImage4').src=`https://rashadalabbasy-001-site1.ctempurl.com/Images/AboutUsImages/${Data.image4}`;
 
             };
 
@@ -221,7 +221,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
             document.getElementById('UpdateDiscrptionForm').addEventListener('submit', function(event) {
                 event.preventDefault();
             
-                fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateAboutUs1`, {
+                fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateAboutUs1`, {
                     method: 'PUT',
                     headers: {
                         'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -277,7 +277,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                  formData.append('id', 1); 
                  formData.append('AnyImage', 1); 
                  formData.append('ImageFile1', imageFile1); 
-                 fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
+                 fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
                      method: 'PUT',
                      headers: {
                          'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -326,7 +326,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                  formData.append('id',1); 
                  formData.append('AnyImage', 2); 
                  formData.append('ImageFile1', imageFile1); 
-                 fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
+                 fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
                      method: 'PUT',
                      headers: {
                          'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -376,7 +376,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                  formData.append('id',1); 
                  formData.append('AnyImage', 3); 
                  formData.append('ImageFile1', imageFile1); 
-                 fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
+                 fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
                      method: 'PUT',
                      headers: {
                          'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -427,7 +427,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                  formData.append('id', 1); 
                  formData.append('AnyImage',4); 
                  formData.append('ImageFile1', imageFile1); 
-                 fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
+                 fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagAboutUs`, {
                      method: 'PUT',
                      headers: {
                          'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -473,7 +473,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
 
  if (window.location.pathname === '/SocilaMedia.html') {
 
- fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/SocialMedia`,{
+ fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/SocialMedia`,{
  method:'GET',
  headers:{
    'Content-Type': 'application/json'
@@ -538,7 +538,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
     formData.append('anyurl', parseInt(document.getElementById('Result').getAttribute('data-id'), 10)); 
     formData.append('value', document.getElementById('Result').value);
   
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateSoicalMedia`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateSoicalMedia`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -593,7 +593,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
 
             let StafsData=document.getElementById('StafsData');
 
-            fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/Stafs`,{
+            fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/Stafs`,{
               method:'GET',
               headers:{
                  'Content-Type': 'application/json'
@@ -627,7 +627,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                 <p style="text-align:center;    display: grid;
         grid-gap: 10px;">
 
-            <a  id="example2" href="http://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${element.image}"  title=${element.name}"><img loading="lazy"  style="width: 100%; height: 250px;" src="http://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${element.image}" alt="" /></a>
+            <a  id="example2" href="https://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${element.image}"  title=${element.name}"><img loading="lazy"  style="width: 100%; height: 250px;" src="https://rashadalabbasy-001-site1.ctempurl.com/Images/StafsImages/${element.image}" alt="" /></a>
             <button class="btn btn-grad btn-default UpdateImge" data-id="${element.id}"  data-toggle="modal" data-target="#formModal2">تحديث الصورة</button>
         <button class="btn btn-grad btn-default UpdateText" data-id="${element.id}" data-toggle="modal" data-target="#formModal">تحديث المعلومات</button>
                 </p>
@@ -644,7 +644,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
                     UpdateTetxtForThisID = this.getAttribute('data-id');
         
                     let GetLandingContent=()=>{
-                        fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetStafByID?id=${UpdateTetxtForThisID}`,{
+                        fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/GetStafByID?id=${UpdateTetxtForThisID}`,{
                          method:'GET',
                          headers:{
                      'Authorization': `Bearer ${localStorage.getItem('Token')}`,
@@ -689,7 +689,7 @@ document.getElementById('UpdateTextFrom').addEventListener('submit', function(ev
     formData.append('name', document.getElementById('Name').value); 
     formData.append('phone', document.getElementById('Phone').value); 
   
-    fetch(` http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdatStafs${UpdateTetxtForThisID}`, {
+    fetch(` https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdatStafs${UpdateTetxtForThisID}`, {
         method: 'PUT',
         headers: {
             'Authorization': `Bearer ${localStorage.getItem('Token')}`
@@ -744,7 +744,7 @@ document.getElementById('UpdateImageFrom').addEventListener('submit',function(ev
      formData.append('id', UpdateTetxtForThisID); 
      formData.append('AnyImage', 5); 
      formData.append('ImageFile1', imageFile1); 
-     fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagStafs`, {
+     fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/AdminPanelContent/UpdateImagStafs`, {
          method: 'PUT',
          headers: {
              'Authorization': `Bearer ${localStorage.getItem('Token')}`
