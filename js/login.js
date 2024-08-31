@@ -25,7 +25,7 @@ document.getElementById('LoginForm').addEventListener('submit', function(event) 
   
 
 
-    fetch(`http://rashadalabbasy-001-site1.ctempurl.com/api/Login?UserName=${UserName}&Password=${Password}`, {
+    fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/Login?UserName=${UserName}&Password=${Password}`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
