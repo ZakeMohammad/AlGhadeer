@@ -443,7 +443,7 @@ let FillSoicalMedia=()=>{
     document.getElementById('In').href=data.instegramURL;
     document.getElementById('Em').href=href=`mailto:${data.email}`;
   
-    if (window.location.pathname === '/contact.html') {
+    if (window.location.pathname==='/AlGhadeer/contact.html') {
       document.getElementById('email1').innerHTML = '<i class="fa fa-envelope-open text-primary me-2"></i>'+data.email;
       document.getElementById('email2').innerHTML='<i class="fa fa-envelope-open text-primary me-2"></i>'+data.email;
       document.getElementById('email1').href=`mailto:${data.email}`;
@@ -468,7 +468,7 @@ let FillSoicalMedia=()=>{
   FillSoicalMedia();
 
 
-if (window.location.pathname === '/index2.html') {
+if (window.location.pathname==='/AlGhadeer/index2.html') {
 
  let LandingData=document.getElementById('LandingContent');
 
@@ -837,6 +837,7 @@ if(window.location.pathname==='/AlGhadeer/RoomDetails.html'){
           document.getElementById('Beds').innerText=data.bed;
           document.getElementById('Baths').innerText=data.bath;
           document.getElementById('Description').innerText=data.description;
+          document.getElementById('BookThisRoom').href=`booking.html?id=${data.id}`;
           
           if(data.avaliabel===true){
             document.getElementById('Availability').innerText='Avaliabel';
