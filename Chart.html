@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+ <html lang="en"> 
+
+<head>
+    <meta charset="UTF-8" />
+    <title>النسب المئوية</title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+    <link rel="icon" href="img/LOGO.png" >
+    <link href="plugins/flot/examples/examples.css" rel="stylesheet" />
+    <style>
+        .ForMargin {
+            margin:5px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/MoneAdmin.css" />
+    <link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+
+<body class="padTop53 " >
+
+
+    <div id="wrap" >
+        
+        <div id="top">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top " style="padding-top: 10px;">
+                <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
+                    <i class="icon-align-justify"></i>
+                </a>
+                <header class="navbar-header">
+
+                    <a href="index.html" class="navbar-brand">
+                   <img loading="lazy"  src="img/Black-removebg-preview.png" id="LogoImage"  alt="" />
+                        
+                        </a>
+                </header>
+               
+                <ul class="nav navbar-top-links navbar-right" style="text-align: right;">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-user "></i>&nbsp; <i class="icon-chevron-down "></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="UpdateAdmin.html" id="UpdateMyPage"><i class="icon-user"></i> تعديل صفحتي </a>
+                            </li>
+                       
+                         
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="icon-signout"></i> تسجيل خروج </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                  
+                </ul>
+
+            </nav>
+
+        </div>
+
+      
+        <div id="left" >
+            <div class="media user-media well-small">
+                <a class="user-link" href="#">
+                   <img loading="lazy"  id="AdminImage" class="media-object img-thumbnail user-img" alt="User Picture" src="img/user.gif" style="height: 90px; width: 90px;" />
+                </a>
+                <br />
+                <div class="media-body">
+                    <h5 class="media-heading" id="AdminName"> زكي محمد  </h5>
+                    <ul class="list-unstyled user-info">
+                        
+                        <li>
+                             <a class="btn btn-success btn-xs btn-circle" style="width: 10px;height: 12px;"></a> اونلاين
+                           
+                        </li>
+                       
+                    </ul>
+                </div>
+                <br />
+            </div>
+
+            <ul id="menu" class="collapse">
+
+                
+                <li class="panel active">
+                    <a href="index.html" style="display: flex; justify-content: space-between;">
+                        <i class="icon-table"></i> داشبورد
+                    </a>                   
+                </li>
+
+
+                <li class="panel ">
+                    <a href="#" style="display: flex; justify-content: space-between;" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
+                        <i class="fa-solid fa-table"></i>  محتوى الموقع 
+	
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                    
+                    </a>
+                    <ul class="collapse" id="form-nav">
+                        <li class=""><a href="HomeContent.html"><i class="icon-angle-right"></i> شاشة العرض </a></li>
+                        <li class=""><a href="aboutus.html"><i class="icon-angle-right"></i> من نحن </a></li>
+                        <li class=""><a href="SocilaMedia.html"><i class="icon-angle-right"></i> التواصل الاجتماعي </a></li>
+                        <li class=""><a href="Stafs.html"><i class="icon-angle-right"></i>  الموظفون </a></li>
+                    </ul>
+                </li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Appartments.html"><i class="fa fa-house-chimney"></i>   الشقق  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Bookings.html"><i class="fa fa-newspaper"></i>   الحجوزات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Admins.html"><i class="fa-solid fa-user-tie"></i>    الادمن </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Payments.html"><i class="fa-solid fa-money-check-dollar"></i>  الفواتير </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="TimeLine.html"><i class="fa-solid fa-bolt"></i>    احدث الحركات </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Transactions.html"><i class="fa-solid fa-bars-progress"></i>  الحركات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Chart.html"><i class="icon-bar-chart"></i>   رسم بياني  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Map.html"><i class="icon-map-marker"></i>   خرائط جوجل  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="login.html"><i class="icon-signin"></i> تسجيل خروج  </a></li>
+
+            </ul>
+
+        </div>
+     
+        <div id="content">
+
+            <div class="inner" style="min-height:700px;">
+                <div class="row">
+                    <div class="col-lg-12" style="text-align: center;">
+                        <h2> النسب المئوية للحجوزات</h2>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row">
+                    <div class="col-lg-12">
+                         <div class="panel panel-default">
+                            <div class="panel-heading">
+
+                            </div>
+                              <div class="panel-body" >
+                 <button id="example-11" class="btn btn-warning ForMargin  btn-grad">شكل الدونات</button>
+                <button id="example-1" class="btn btn-danger ForMargin btn-grad">دائرة </button>
+				<button id="example-2" class="btn btn-info ForMargin btn-grad" > النسبة المئوية بالخارج</button>
+				<button id="example-4"  class="btn btn-success ForMargin btn-grad">النسبة المئوية بالداخل</button>		
+				<button id="example-6"  class="btn btn-danger ForMargin btn-grad">النسبة المئوية مع اطار</button>
+				<button id="example-9"  class="btn btn-primary ForMargin btn-grad">تعبئة الشاشة</button>
+				<button id="example-10"  class="btn btn-default ForMargin btn-grad"> بشكل مائل</button>
+				
+                              </div>
+                            <div class="panel-body">
+                              
+			<div class="demo-container">
+			<div id="placeholder" class="demo-placeholder"></div>
+	
+		</div>
+		</div>
+                            </div>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+     
+        </div>
+       
+
+
+    
+    </div>
+
+
+
+    <div id="footer">
+        <p>&copy; <a href="https://www.instagram.com/zakim.ohammad/" target="_blank">المبرمج: زكي محمد</a>   &nbsp; 2024 &nbsp;</p>
+    </div>
+
+    <script src="plugins/jquery-2.0.3.min.js"></script>
+     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+ 
+    <script  src="plugins/flot/jquery.flot.js"></script>
+     <script src="plugins/flot/jquery.flot.resize.js"></script>
+	<script  src="plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/pie_chart.js"></script>
+    <script src="js/AdminTransactions.js"></script>
+    
+</body>
+</html>

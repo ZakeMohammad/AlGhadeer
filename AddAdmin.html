@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+
+ <html lang="en"> 
+
+<head>
+    <meta charset="UTF-8" />
+    <title> اضافة ادمن جديد</title>
+    <link rel="icon" href="img/LOGO.png" type="image/png">
+
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/MoneAdmin.css" />
+    <link rel="stylesheet" href="plugins/switch/static/stylesheets/bootstrap-switch.css" />
+    <link rel="stylesheet" href="plugins/chosen/chosen.min.css" />
+    <link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <link rel="stylesheet" href="css/bootstrap-fileupload.min.css" />
+    <link href="plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+
+</head>
+
+<body class="padTop53 " >
+
+
+    <div id="wrap" >
+
+      
+        <div id="top">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top " style="padding-top: 10px;">
+                <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
+                    <i class="icon-align-justify"></i>
+                </a>
+                <header class="navbar-header">
+
+                    <a href="index.html" class="navbar-brand">
+                   <img loading="lazy"  src="img/Black-removebg-preview.png" id="LogoImage"  alt="" />
+                        
+                        </a>
+                </header>
+               
+                <ul class="nav navbar-top-links navbar-right" style="text-align: right;">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-user "></i>&nbsp; <i class="icon-chevron-down "></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="UpdateAdmin.html" id="UpdateMyPage"><i class="icon-user"></i> تعديل صفحتي </a>
+                            </li>
+                       
+                         
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="icon-signout"></i> تسجيل خروج </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                  
+                </ul>
+
+            </nav>
+
+        </div>
+
+      
+        <div id="left" >
+            <div class="media user-media well-small">
+                <a class="user-link" href="#">
+                   <img loading="lazy"  id="AdminImage" class="media-object img-thumbnail user-img" alt="User Picture" src="img/user.gif" style="height: 90px; width: 90px;" />
+                </a>
+                <br />
+                <div class="media-body">
+                    <h5 class="media-heading" id="AdminName"> زكي محمد  </h5>
+                    <ul class="list-unstyled user-info">
+                        
+                        <li>
+                             <a class="btn btn-success btn-xs btn-circle" style="width: 10px;height: 12px;"></a> اونلاين
+                           
+                        </li>
+                       
+                    </ul>
+                </div>
+                <br />
+            </div>
+
+            <ul id="menu" class="collapse">
+
+                
+                <li class="panel active">
+                    <a href="index.html" style="display: flex; justify-content: space-between;">
+                        <i class="icon-table"></i> داشبورد
+                    </a>                   
+                </li>
+
+
+                <li class="panel ">
+                    <a href="#" style="display: flex; justify-content: space-between;" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
+                        <i class="fa-solid fa-table"></i>  محتوى الموقع 
+	
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                    
+                    </a>
+                    <ul class="collapse" id="form-nav">
+                        <li class=""><a href="HomeContent.html"><i class="icon-angle-right"></i> شاشة العرض </a></li>
+                        <li class=""><a href="aboutus.html"><i class="icon-angle-right"></i> من نحن </a></li>
+                        <li class=""><a href="SocilaMedia.html"><i class="icon-angle-right"></i> التواصل الاجتماعي </a></li>
+                        <li class=""><a href="Stafs.html"><i class="icon-angle-right"></i>  الموظفون </a></li>
+                    </ul>
+                </li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Appartments.html"><i class="fa fa-house-chimney"></i>   الشقق  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Bookings.html"><i class="fa fa-newspaper"></i>   الحجوزات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Admins.html"><i class="fa-solid fa-user-tie"></i>    الادمن </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Payments.html"><i class="fa-solid fa-money-check-dollar"></i>  الفواتير </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="TimeLine.html"><i class="fa-solid fa-bolt"></i>    احدث الحركات </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Transactions.html"><i class="fa-solid fa-bars-progress"></i>  الحركات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Chart.html"><i class="icon-bar-chart"></i>   رسم بياني  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Map.html"><i class="icon-map-marker"></i>   خرائط جوجل  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="login.html"><i class="icon-signin"></i> تسجيل خروج  </a></li>
+
+            </ul>
+
+        </div>
+        <div id="content">
+
+            <div class="inner" style=" min-height: fit-content;">
+                <div class="row">
+                    <div class="col-lg-12">
+                    
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                          
+                                            <h4 class="modal-title" id="H4" style="text-align: center;"> اضافة ادمن  </h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form  enctype="multipart/form-data" class="form-horizontal AddAdminForm" style="text-align: right;" id="block-validate">
+
+                                                <div class="form-group">
+                                                
+                                                    <div class="col-lg-8">
+                                                        <input type="text" id="required2" style="text-align: right;" name="required2" class="form-control Username" />
+                                                    </div>
+                                                    <label class="control-label col-lg-4"> اسم المستخدم</label>
+                                                </div>
+        
+                                                <div class="form-group">
+                                                
+                                                    <div class="col-lg-8">
+                                                        <input type="text" id="" style="text-align: right;" name=""  required class="form-control Name" />
+                                                    </div>
+                                                    <label class="control-label col-lg-4">  الاسم</label>
+                                                </div>
+
+                                                <div class="form-group">
+        
+                                                    <div class=" col-lg-8">
+                                                        <input class=" form-control Password" id="password2" name="password2" type="password" required style="text-align: right;" />
+                                                    </div>
+                                                    <label class="control-label col-lg-4">كلمة السر</label>
+
+                                                </div>
+                                                <div class="form-group">        
+                                                    <div class=" col-lg-8">
+                                                        <input class=" form-control" required style="text-align: right;" type="password" 
+                                                        id="confirm_password2" name="confirm_password2" />
+                                                    </div>
+                                                    <label class="control-label col-lg-4">تاكيد كلمة السر </label>
+                                                </div>
+                        
+        
+                                                <div class="row">                                             
+                                                    <div class="col-lg-12">
+                                                        <div class="panel panel-default">
+                                                            <div class="panel-heading">                                                       
+                                                            </div>
+                                                            <div class="panel-body">                                                        
+                                    
+                                                                <div class="tab-content">
+                                                                    <div class="tab-pane fade in active" id="home-pills">
+                                                                        <div class="form-group">                                                                        
+                                                                            <div class="col-lg-8">
+                                                                                <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                                                    <div class="fileupload-preview thumbnail" style="width: 200px; height: 150px;"></div>
+                                                                                    <div>
+                                                                                        <span class="btn btn-file btn-success"><span class="fileupload-new btn-grad">اختار صورة </span><span class="fileupload-exists btn-grad">تغيير</span><input type="file" required id="Image1"/></span>
+                                                                                        <a href="#" class="btn btn-danger fileupload-exists btn-grad" data-dismiss="fileupload">ازالة</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <label class="control-label col-lg-4">تحميل الصورة </label>
+        
+                                                                        </div>
+                                                                    </div>                                                          
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <a type="button" href="Admins.html" id="Closebtn" class="btn btn-default btn-grad" data-dismiss="modal">رجوع</a>
+                                                    <input type="submit" value="اضافة " id="submitBtn" class="btn btn-primary btn-grad" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                
+                 </div>
+            
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="footer">
+        <p>&copy; <a href="https://www.instagram.com/zakim.ohammad/" target="_blank">المبرمج: زكي محمد</a>   &nbsp; 2024 &nbsp;</p>
+    </div>
+
+    <script src="js/Appartments.js"></script>
+    <script src="plugins/jquery-2.0.3.min.js"></script>
+    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+   <script src="plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+   <script src="plugins/switch/static/js/bootstrap-switch.min.js"></script>
+   <script src="plugins/validationengine/js/jquery.validationEngine.js"></script>
+   <script src="plugins/validationengine/js/languages/jquery.validationEngine-en.js"></script>
+   <script src="plugins/jquery-validation-1.11.1/dist/jquery.validate.min.js"></script>
+   <script src="js/validationInit.js"></script>
+   <script src="plugins/jasny/js/bootstrap-fileupload.js"></script>
+   <script src="plugins/gritter/js/jquery.gritter.js"></script>
+   <script src="js/AdminTransactions.js"></script>
+
+
+    <script>
+        $(function () { formValidation(); });
+
+
+        const passwordField = document.getElementById('password2');
+    const confirmPasswordField = document.getElementById('confirm_password2');
+    const submitButton = document.getElementById('submitBtn');
+    submitButton.disabled = true;
+    function validatePasswords() {
+        const password = passwordField.value.trim();
+        const confirmPassword = confirmPasswordField.value.trim();
+        
+        if (password !== '' && confirmPassword !== '' && password === confirmPassword) {
+            submitButton.disabled = false;
+        } else {
+            submitButton.disabled = true;
+        }
+    }
+    passwordField.addEventListener('input', validatePasswords);
+    confirmPasswordField.addEventListener('input', validatePasswords);
+   </script>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,338 @@
+﻿<!DOCTYPE html>
+ <html lang="en"> 
+<head>
+    <meta charset="UTF-8" />
+    <title>داشبورد </title>
+     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+	<meta content="" name="description" />
+	<meta content="" name="author" />
+    <link rel="icon" href="img/LOGO.png" >
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/MoneAdmin.css" />
+    <link rel="stylesheet" href="plugins/Font-Awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/layout2.css" rel="stylesheet" />
+    <link href="plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
+
+    <link href="plugins/flot/examples/examples.css" rel="stylesheet" />
+</head>
+
+<body class="padTop53 " >
+
+
+    <div id="wrap" >
+        
+
+
+        <div id="top">
+
+            <nav class="navbar navbar-inverse navbar-fixed-top " style="padding-top: 10px;">
+                <a data-original-title="Show/Hide Menu" data-placement="bottom" data-tooltip="tooltip" class="accordion-toggle btn btn-primary btn-sm visible-xs" data-toggle="collapse" href="#menu" id="menu-toggle">
+                    <i class="icon-align-justify"></i>
+                </a>
+                <header class="navbar-header">
+
+                    <a href="index.html" class="navbar-brand">
+                   <img loading="lazy"  src="img/Black-removebg-preview.png" id="LogoImage"  alt="" />
+                        
+                        </a>
+                </header>
+               
+                <ul class="nav navbar-top-links navbar-right" style="text-align: right;">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            <i class="icon-user "></i>&nbsp; <i class="icon-chevron-down "></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="UpdateAdmin.html" id="UpdateMyPage"><i class="icon-user"></i> تعديل صفحتي </a>
+                            </li>
+                       
+                         
+                            <li class="divider"></li>
+                            <li><a href="login.html"><i class="icon-signout"></i> تسجيل خروج </a>
+                            </li>
+                        </ul>
+
+                    </li>
+                  
+                </ul>
+
+            </nav>
+
+        </div>
+
+       
+        <div id="left" >
+            <div class="media user-media well-small">
+                <a class="user-link" href="#">
+                   <img loading="lazy"  id="AdminImage" class="media-object img-thumbnail user-img" alt="User Picture" src="" style="height: 90px; width: 90px;" />
+                </a>
+                <br />
+                <div class="media-body">
+                    <h5 class="media-heading" id="AdminName">  </h5>
+                    <ul class="list-unstyled user-info">
+                        
+                        <li>
+                             <a class="btn btn-success btn-xs btn-circle" style="width: 10px;height: 12px;"></a> اونلاين
+                           
+                        </li>
+                       
+                    </ul>
+                </div>
+                <br />
+            </div>
+
+            <ul id="menu" class="collapse">
+
+                
+                <li class="panel active">
+                    <a href="index.html" style="display: flex; justify-content: space-between;">
+                        <i class="icon-table"></i> داشبورد
+                    </a>                   
+                </li>
+
+
+                <li class="panel ">
+                    <a href="#" style="display: flex; justify-content: space-between;" data-parent="#menu" data-toggle="collapse" class="accordion-toggle collapsed" data-target="#form-nav">
+                        <i class="fa-solid fa-table"></i>  محتوى الموقع 
+	
+                        <span class="pull-right">
+                            <i class="icon-angle-left"></i>
+                        </span>
+                    
+                    </a>
+                    <ul class="collapse" id="form-nav">
+                        <li class=""><a href="HomeContent.html"><i class="icon-angle-right"></i> شاشة العرض </a></li>
+                        <li class=""><a href="aboutus.html"><i class="icon-angle-right"></i> من نحن </a></li>
+                        <li class=""><a href="SocilaMedia.html"><i class="icon-angle-right"></i> التواصل الاجتماعي </a></li>
+                        <li class=""><a href="Stafs.html"><i class="icon-angle-right"></i>  الموظفون </a></li>
+                    </ul>
+                </li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Appartments.html"><i class="fa fa-house-chimney"></i>   الشقق  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Bookings.html"><i class="fa fa-newspaper"></i>   الحجوزات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Admins.html"><i class="fa-solid fa-user-tie"></i>    الادمن </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Payments.html"><i class="fa-solid fa-money-check-dollar"></i>  الفواتير </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="TimeLine.html"><i class="fa-solid fa-bolt"></i>    احدث الحركات </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Transactions.html"><i class="fa-solid fa-bars-progress"></i>  الحركات  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Chart.html"><i class="icon-bar-chart"></i>   رسم بياني  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="Map.html"><i class="icon-map-marker"></i>   خرائط جوجل  </a></li>
+                <li><a  style="display: flex; justify-content: space-between;" href="login.html"><i class="icon-signin"></i> تسجيل خروج  </a></li>
+
+            </ul>
+
+        </div>
+
+
+        <div id="content">
+
+            <div class="inner" style="min-height: 700px;">
+                <div class="row">
+                    <div class="col-lg-12" style="text-align: center;">
+                        <h1> الصفحة الرئيسية </h1>
+                    </div>
+                </div>
+                  <hr />
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <div style="text-align: center;">
+                            <a class="quick-btn" href="#">
+                                <i class="fa-solid fa-house-chimney icon-2x"></i>
+                                <span>جميع الشقق</span>
+                                <span class="label label-danger" id="AllAppointmetns">2</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="fa-solid fa-users icon-2x"></i>
+                                <span>الموظفون</span>
+                                <span class="label label-success" id="AllStafs">456</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="fa-regular fa-newspaper icon-2x"></i>
+                                <span>الحجوزات</span>
+                                <span class="label label-warning" id="AllBookings">+25</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="fa-solid fa-message icon-2x"></i>
+                                <span>التعليقات</span>
+                                <span class="label btn-metis-2" id="AllCommits">11</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="fa-solid fa-person-shelter icon-2x"></i>
+                                <span>الزيارات</span>
+                                <span class="label btn-metis-4" id="AllVisits">107</span>
+                            </a>
+                            <a class="quick-btn" href="#">
+                                <i class="fa-solid fa-house-chimney icon-2x"></i>
+                                <span>الشقق المتاحة</span>
+                                <span class="label label-success" id="AvaliabelAppointmetns">2</span>
+                            </a>
+
+                            
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <hr />
+
+                <div class="row">
+                    <div class="col-lg-7">
+
+                        <div class="chat-panel panel panel-success">
+                            <div class="panel-heading">
+                                <i class="icon-comments"></i>
+                                 التعليقات
+                            </div>
+                            <div class="panel-body">
+                                <ul class="chat" id="CommitsChat">                        
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-5">
+
+                       <div class="panel panel-danger">
+                            <div class="panel-heading">
+                                <i class="icon-bell"></i> الاشعارات
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item">
+                                        <i class=" icon-comment"></i> احدث تعليق
+                                    <span class="pull-right text-muted small"><em id="LatestCommit"> 23 Jan 2:00 pm</em>
+                                    </span>
+                                    </a>
+
+                                  
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="icon-upload"></i> توقف السيرفر 
+                                    <span class="pull-right text-muted small"><em id="LatestServierStop">23 Jan 2:00 pm</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="icon-warning-sign"></i> تحطم السيرفر !
+                                    <span class="pull-right text-muted small"><em id="LatestServierCrash">23 Jan 2:00 pm</em>
+                                    </span>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="icon-ok"></i>احدث عملية حجز  
+                                    <span class="pull-right text-muted small"><em id="LatestBooking">23 Jan 2:00 pm</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class=" icon-money"></i> احدث عملية دفع
+                                    <span class="pull-right text-muted small"><em id="LatestPayment">23 Jan 2:00 pm</em>
+                                    </span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                          
+                    
+                    </div>
+                </div>
+              
+                
+
+            </div>
+
+        </div>
+  
+       
+
+         <div id="right">
+
+            
+            <div class="well well-small">
+                <ul class="list-unstyled">
+                    <li>الادمن &nbsp; : <span id="numberofadmins">23,000</span></li>
+                   
+                    <li>العملاء &nbsp; : <span id="numberofclaints">3,000</span></li>
+                    <li>الشقق المحجوزة  &nbsp; : <span id="closedrooms">53,000 </span></li>
+                </ul>
+            </div>
+            <div class="well well-small">
+                <button class="btn  btn-block"> <a href="#" style="color: rgb(8, 8, 8);">الصفحة الرئيسية</a> </button>
+                <button class="btn btn-primary btn-block"> <a href="Appartments.html" style="color: white;">الشقق</a></button>
+                <button class="btn btn-info btn-block"> <a href="Bookings.html" style="color: white;">الحجوزات</a> </button>
+                <button class="btn btn-success btn-block"> <a href="Admins.html" style="color: white;">الادمن</a> </button>
+                <button class="btn btn-danger btn-block"> <a href="Chart.html" style="color: white;">رسم بياني</a> </button>
+                <button class="btn btn-warning btn-block"> <a href="Map.html" style="color: white;">الخرائط</a> </button>
+             
+            </div>
+
+
+            <div class="well well-small">
+               
+                <span>الشقق المتاحة</span><span class="pull-right"><small id="RateValiabel1">40%</small></span>
+
+                <div class="progress mini progress-striped active">
+                    <div class="progress-bar progress-bar-success" style="width: 10%" id="RateValiabel2"></div>
+                </div>
+              
+                <span>الشقق المحجوزة </span><span class="pull-right"><small id="RateNotValiabel1">80%</small></span>
+
+                <div class="progress mini progress-striped active">
+                    <div class="progress-bar progress-bar-danger" style="width: 90%" id="RateNotValiabel2"></div>
+                </div>
+            </div>
+
+        </div>
+
+    
+        <div class="col-lg-12">
+            <div class="modal fade" id="buttonedModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel"  aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" id="CloseDelete" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title"  id="H1" style="text-align: center;">حذف التعليق </h4>
+                            </div>
+                            <div class="modal-body" style="text-align: right;">
+                                هل انت متاكد من حذف هذا التعليق؟
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" id="CloseDelete" class="btn btn-default btn-grad" data-dismiss="modal">رجوع</button>
+                                <button type="button" class="btn btn-danger btn-grad" data-id="" aria-hidden="true" data-dismiss="modal" id="DeleteApp">حذف </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="footer">
+        <p>&copy; <a   href="https://www.instagram.com/zakim.ohammad/" target="_blank">المبرمج: زكي محمد</a>   &nbsp; 2024 &nbsp;</p>
+    </div>
+
+
+
+    <script src="plugins/jquery-2.0.3.min.js"></script>
+     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="plugins/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    <script src="plugins/flot/jquery.flot.js"></script>
+    <script src="plugins/flot/jquery.flot.resize.js"></script>
+    <script src="plugins/flot/jquery.flot.time.js"></script>
+     <script  src="plugins/flot/jquery.flot.stack.js"></script>
+    <script src="js/for_index.js"></script>
+    <script src="plugins/gritter/js/jquery.gritter.js"></script>
+    <script src="js/AdminTransactions.js"></script>
+</body>
+</html>
