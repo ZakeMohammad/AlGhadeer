@@ -353,7 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
 
   
-if (window.location.pathname !== '/RoomDetails.html') {
+if (window.location.pathname !== '/AlGhadeer/RoomDetails.html') {
   document.querySelector('.AddCommitForm').addEventListener('submit',function(e){
     e.preventDefault();
 
@@ -739,7 +739,7 @@ function FillRandomCommit(Data) {
 
 
 
-if(window.location.pathname==='/room.html'){
+if(window.location.pathname==='/AlGhadeer/room.html'){
 
 
     let RoomsData=document.getElementById('RoomssContent');
@@ -813,7 +813,7 @@ if(window.location.pathname==='/room.html'){
 }
 
 
-if(window.location.pathname==='/RoomDetails.html'){
+if(window.location.pathname==='/AlGhadeer/RoomDetails.html'){
     let ID = new URLSearchParams(window.location.search).get('id');
 
     let GetDetails=()=>{
@@ -867,7 +867,7 @@ if(window.location.pathname==='/RoomDetails.html'){
 
 
 
-if(window.location.pathname==='/booking.html'){
+if(window.location.pathname==='/AlGhadeer/booking.html'){
     let ID = new URLSearchParams(window.location.search).get('id');
 
     let PriceForAppartment=0;
@@ -1034,7 +1034,7 @@ if(window.location.pathname==='/booking.html'){
 
 }
 
-if(window.location.pathname==='/about.html'){
+if(window.location.pathname==='/AlGhadeer/about.html'){
     let AboutusData=document.getElementById('AboutusContent');
     let StafsData=document.getElementById('StafsSection');
 
@@ -1154,7 +1154,7 @@ if(window.location.pathname==='/about.html'){
 }
 
 
-if(window.location.pathname==='/testimonial.html'){
+if(window.location.pathname==='/AlGhadeer/testimonial.html'){
 
     fetch(`https://rashadalabbasy-001-site1.ctempurl.com/api/MainContant/AllCommits`, {
         method: 'GET',
